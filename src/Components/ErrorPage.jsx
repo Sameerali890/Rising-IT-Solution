@@ -1,4 +1,3 @@
-// import Error from "../assets/svg/404 Page Not Found.png"
 function ErrorPage() {
   return (
 <div className="main_wrapper relative z-50">

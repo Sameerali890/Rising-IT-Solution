@@ -3,7 +3,8 @@ import Contentmanagement from "../assets/svg/contentmanagement.png"
 import softwaredevelopment from "../assets/svg/software development.png"
 import SystemIntegration from "../assets/svg/System Integration.png"
 import { useParams } from "react-router-dom";
-import Footer from "../Components/Footer";
+import Footer from "../Components/footer";
+
 
 function Services() {
   var { service } = useParams();
