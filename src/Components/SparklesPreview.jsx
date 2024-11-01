@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SparklesCore } from "./ui/sparkles";
+import { SparklesCore } from "../Components/ui/Sparkles";
 import { BackgroundBeamsWithCollision } from "./ui/Beams"
 
 function SparklesPreview() {
