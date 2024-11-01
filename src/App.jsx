@@ -1,4 +1,4 @@
-import Footer from "./Components/footer";
+import Footer from "../src/Components/Footer"
 import NavBar from "./Components/NavBar";
 import OurServices from "./Components/OurServices";
 import SparklesPreview from "./Components/SparklesPreview";
