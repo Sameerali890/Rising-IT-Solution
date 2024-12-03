@@ -6,18 +6,19 @@ function NavBar() {
     <nav className="container absolute z-10 flex items-center p-4 -translate-x-1/2 left-1/2">
       <img src={Logo} className="w-[100px]" alt="" />
       <div className="flex items-center gap-8 ml-auto">
-        <Link to="/">Home</Link>
+        <Link to="/" className="hover:text-blue-500">Home</Link>
         <section className="relative group">
-          <button className="flex items-center gap-1">
+          <button className="flex items-center gap-1 hover:text-blue-500">
             Company <Icon icon="mingcute:down-line" />
           </button>
-          <div className="absolute left-0 grid  h-0 gap-2 overflow-hidden translate-y-4 whitespace-nowrap group-hover:h-[60px] transition-all duration-500">
+          <div className="absolute left-0 grid  h-0  overflow-hidden translate-y-4 whitespace-nowrap group-hover:h-[90px] transition-all duration-500">
             <Link className="hover:text-blue-500" to="/blog">Blog</Link>
+            <Link className="hover:text-blue-500" to="/review">Review</Link>
             <Link className="hover:text-blue-500" to="/aboutus">About Us</Link>
           </div>
         </section>
         <section className="group">
-          <button className="flex items-center gap-1">
+          <button className="flex items-center gap-1 hover:text-blue-500">
             Services <Icon icon="mingcute:down-line" />
           </button>
           <div className="fixed  w-[100%] group-hover:p-6  bg-[#0a0a0a] left-0 grid grid-cols-6 h-0 gap-2 overflow-hidden translate-y-4 whitespace-nowrap group-hover:h-[184px] transition-all duration-500">
@@ -67,8 +68,8 @@ function NavBar() {
             </div>
           </div>
         </section>
-        <Link to="/portfolio">Portfolio</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/portfolio" className="hover:text-blue-500">Portfolio</Link>
+        <Link to="/contact" className="hover:text-blue-500">Contact</Link>
       </div>
     </nav>
   );

@@ -19,8 +19,10 @@ function ErrorPage() {
           className="curve_svg"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
+          // eslint-disable-next-line react/no-unknown-property
           xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 189.929 189.929"
+          // eslint-disable-next-line react/no-unknown-property
           xml:space="preserve"
         >
           <path
