@@ -12,7 +12,7 @@ import ReviewSection from './pages/ReviewSection.jsx';
   },
   {
     path: "/blog",
-    element: <>blog</>,
+    element: <>Coming Soon</>,
   },
   {
     path: "/aboutus",

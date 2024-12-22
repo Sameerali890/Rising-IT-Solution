@@ -1,5 +1,5 @@
 import Footer from "../src/Components/Footer"
-import DevelopmentPhase from "./Components/DevelopmentPhase";
+import Clients from "./Components/Clients";
 import NavBar from "./Components/NavBar";
 import NewTools from "./Components/NewTools";
 import OurServices from "./Components/OurServices";
@@ -13,7 +13,7 @@ function App() {
       <SparklesPreview />
       <OurServices />
       <NewTools />
-      <DevelopmentPhase />
+      <Clients />
       <WhyChooseUs />
       <Footer />
       

@@ -9,7 +9,7 @@ import Processsix from "../assets/svg/our-process-main-7.svg";
 
 function DevelopmentPhase() {
   return (
-    <div className="space-y-2 p-4 flex flex-col justify-center items-center">
+    <div className="space-y-2 p-4 mb-10 flex flex-col justify-center items-center">
       <div>
         <h1 className=" mb-2 font-bold text-5xl text-center text-white">
           Our Process

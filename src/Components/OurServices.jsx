@@ -15,7 +15,7 @@ function OurServices() {
       img: "https://arthtechnology.com/assets/img/images/digital-marketing-service-provider-company-in-vadodara.gif",
     },
     {
-      title: "Cloud Software",
+      title: "Web Software",
       description:
         "Deploy applications and services on secure, scalable, and cost-effective cloud platforms.",
       img: "https://i.pinimg.com/originals/86/56/8d/86568d91236335604340fcc893087cdb.gif",
@@ -35,8 +35,9 @@ function OurServices() {
   ];
   return (
     <div className="py-10 max-w-6xl mx-auto">
-      <h1 className="text-4xl mb-16 font-bold text-center">Our Services</h1>
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-5  justify-center">
+      <h1 className="text-4xl font-bold text-center">Our Services</h1>
+      <p className="text-center text-1xl ">Empowering Your Future with Smart IT Solutions.</p>
+      <div className="grid p-4 lg:p-0 mt-5 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-5  justify-center">
         {services.map((service) => (
           <ThreeDCardDemo key={service.title} data={service} />
         ))}

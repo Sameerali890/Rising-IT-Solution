@@ -2,7 +2,7 @@ function ErrorPage() {
   return (
 <div className="main_wrapper relative z-50">
   <div className="main ">
-    <div className="grid text-[#63594f]  error-text -z-10 place-content-center place-items-center text-[450px]  top-10  absolute">
+    <div className="grid text-[#63594f]  error-text -z-10 place-content-center place-items-center lg:text-[450px] text-[300px]  lg:top-10 top-32  absolute">
         404
     </div>
     <div className="antenna">

@@ -1,3 +1,5 @@
+import { Icon } from "@iconify/react/dist/iconify.js";
+import DevelopmentPhase from "./DevelopmentPhase";
 import Footer from "./Footer";
 
 function AboutUs() {
@@ -51,6 +53,7 @@ function AboutUs() {
           </ol>
         </div>
       </div>
+      <DevelopmentPhase />
         <Footer />
     </div>
   );

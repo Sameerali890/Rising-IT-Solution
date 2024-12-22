@@ -35,13 +35,13 @@ function Services() {
   const data = services.find((s) => s.title == service);
   return (
     <div>
-      <div className="flex justify-center items-center">
+      <div className="lg:flex  flex flex-col-reverse justify-center items-center">
         <div className="left w-[50%] grid place-content-center p-8 place-items-center h-full">
-          <h2 className="text-5xl font-bold uppercase">{data.title}</h2>
-          <p className="text-2xl mt-[2%] text-center">{data.description}</p>
+          <h2 className="lg:text-5xl text-3xl font-bold uppercase">{data.title}</h2>
+          <p className="lg:text-2xl mt-[2%] text-center">{data.description}</p>
         </div>
-        <div className="right w-[50%] h-ful">
-          <img className="w-[900px]" src={data.img} alt="service" />
+        <div className="right w-[100%] lg:w-[50%] h-full">
+          <img className="lg:w-[900px] w-[800px] " src={data.img} alt="service" />
         </div>
       </div>
         <Footer />

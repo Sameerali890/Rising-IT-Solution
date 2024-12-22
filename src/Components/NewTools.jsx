@@ -1,66 +1,61 @@
 /* eslint-disable react/jsx-key */
 import styled, { keyframes, css } from "styled-components";
+import Html from "../assets/Tools-Image/html.svg"
+import Github from "../assets/Tools-Image/Github.svg"
+import Tailwind from "../assets/Tools-Image/Tailwind-css.svg"
+import Firebase from "../assets/Tools-Image/Firebase.svg"
+import Python from "../assets/Tools-Image/Python.svg"
+import Vscode from "../assets/Tools-Image/Vs-code.svg"
+import Mysql from "../assets/Tools-Image/My-sql.svg"
+import Wordpress from "../assets/Tools-Image/Word-press.svg"
+import Php from "../assets/Tools-Image/Php.svg"
+import Jquery from "../assets/Tools-Image/Jquery.svg"
 function NewTools() {
   const row1 = [
-    "https://www.citypng.com/public/uploads/preview/download-html5-round-logo-icon-png-701751694771801xidtztxanv.png",
+    Html,
     "https://coryrylan.com/assets/images/posts/types/css.svg",
     "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/800px-Bootstrap_logo.svg.png",
     "https://miro.medium.com/v2/resize:fit:344/1*tZHcs0d7MAG-BBcjBekZYA.png",
     "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
     "https://hopetutors.com/wp-content/uploads/2017/03/nodejs-logo-1.png",
-    "https://w7.pngwing.com/pngs/203/560/png-transparent-github-logo-thumbnail.png",
+    Github,
     "https://img.icons8.com/fluent-systems-filled/512/FFFFFF/nextjs.png",
   ];
 
   const row2 = [
-    "https://getlogovector.com/wp-content/uploads/2021/01/tailwind-css-logo-vector.png",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQktpK3Jy3GkxXutGPzl8R3OBCNMxfFWP5A&s",
-    "https://i.pinimg.com/736x/6a/fb/f4/6afbf45910b9b4c344737f76043d2cbc.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP9tKSm-H9nOPOypNjRleWadabE9DtpDqWnw&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM91T1S4z84bTfnQg-ExIMn9MW_bs43wkg5g&s",
-    "https://download.logo.wine/logo/WordPress.com/WordPress.com-Logo.wine.png",
-    "https://icon2.cleanpng.com/20180420/cie/avu6ydxvj.webp",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOdlB1Jh18fFOgn0ZLbc_5jJQr6qAj5gixnA&s",
+    Tailwind,
+    Firebase,
+    Python,
+    Vscode,
+    Mysql,
+    Wordpress,
+    Php,
+    Jquery,
   ];
 
   return (
     <AppContainer>
-      <Wrapper>
-        <h1 className="text-4xl py-10  text-white  font-bold text-center">
+      <Wrapper className="mt-8">
+        <h1 className="text-4xl text-white  font-bold text-center">
           Tools & Technologies
         </h1>
-        <Marquee>
-          <MarqueeGroup>
-            {row1.map((el) => (
-              <ImageGroup>
-                <Image src={el} />
-              </ImageGroup>
-            ))}
-          </MarqueeGroup>
-          <MarqueeGroup>
-            {row1.map((el) => (
-              <ImageGroup>
-                <Image src={el} />
-              </ImageGroup>
-            ))}
-          </MarqueeGroup>
-        </Marquee>
-        <Marquee>
-          <MarqueeGroup2>
-            {row2.map((el) => (
-              <ImageGroup>
-                <Image src={el} />
-              </ImageGroup>
-            ))}
-          </MarqueeGroup2>
-          <MarqueeGroup2>
-            {row2.map((el) => (
-              <ImageGroup>
-                <Image src={el} />
-              </ImageGroup>
-            ))}
-          </MarqueeGroup2>
-        </Marquee>
+        <p className="text-center mb-5 text-1xl text-white">
+          Innovative Tools, Seamless IT Solutions.
+        </p>
+       <marquee >
+       <div className="flex gap-6 lg:gap-10 p-4">
+          {row1.map((r) => (
+            <img className="size-16 lg:size-24 object-contain " src={r} alt="" />
+          ))}
+        </div>
+       </marquee>
+       <marquee direction="right">
+       <div className="flex gap-6 lg:gap-10 p-4">
+          {row2.map((r) => (
+            <img className="size-16 lg:size-24 object-contain " src={r} alt="" />
+          ))}
+        </div>
+       </marquee>
       </Wrapper>
     </AppContainer>
   );
@@ -73,7 +68,7 @@ const AppContainer = styled.div`
   color: #000000;
   position: relative;
   display: flex;
-  margin-bottom:5%;
+  margin-bottom: 5%;
   align-items: center;
   justify-content: center;
 `;
@@ -81,8 +76,6 @@ const AppContainer = styled.div`
 const Wrapper = styled.div`
   width: 100%;
   height: fit-content;
-
-  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -90,7 +83,7 @@ const Wrapper = styled.div`
 
 const Marquee = styled.div`
   display: flex;
-  width: 1400px;
+
   overflow: hidden;
   user-select: none;
 
