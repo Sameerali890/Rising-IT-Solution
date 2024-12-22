@@ -17,7 +17,7 @@ function Review() {
             direction="left"
             className="mt-12 mb-20"
           >
-            <div className="w-[300px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
+            <div className="w-[300px] lg:w-[500px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
               <h1 className="p-3 place-content-center text-3xl font-semibold size-20 rounded-full bg-red-500">
                 A
               </h1>
@@ -35,7 +35,7 @@ function Review() {
                 responsibility.
               </p>
             </div>
-            <div className="w-[300px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
+            <div className="w-[300px] lg:w-[500px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
               <h1 className="p-3 place-content-center text-3xl font-semibold size-20 rounded-full bg-blue-500">
                 A
               </h1>
@@ -53,7 +53,7 @@ function Review() {
                 expertise.
               </p>
             </div>
-            <div className="w-[300px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
+            <div className="w-[300px] lg:w-[500px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
               <h1 className="p-3 place-content-center text-3xl font-semibold size-20 rounded-full bg-blue-500">
                 Y
               </h1>
@@ -70,7 +70,7 @@ function Review() {
                 me tapasya tiwari like this place very much
               </p>
             </div>
-            <div className="w-[300px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
+            <div className="w-[300px] lg:w-[500px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
               <h1 className="p-3 place-content-center text-3xl font-semibold size-20 rounded-full bg-purple-500">
                 S
               </h1>
@@ -89,7 +89,7 @@ function Review() {
                 are superb and responsive towards their responsibilities.
               </p>
             </div>
-            <div className="w-[300px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
+            <div className="w-[300px] lg:w-[500px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
               <h1 className="p-3 place-content-center text-3xl font-semibold size-20 rounded-full bg-red-500">
                 A
               </h1>
@@ -107,7 +107,7 @@ function Review() {
               Super service provider I really loved it service time and facility more.
               </p>
             </div>
-            <div className="w-[300px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
+            <div className="w-[300px] lg:w-[500px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
               <h1 className="p-3 place-content-center text-3xl font-semibold size-20 rounded-full bg-red-500">
                 A
               </h1>
@@ -125,7 +125,7 @@ function Review() {
               I have had an amazing experience with Rising  IT Solutions. I learned a lot from my coworkers.
               </p>
             </div>
-            <div className="w-[300px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
+            <div className="w-[300px] lg:w-[500px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
               <h1 className="p-3 place-content-center text-3xl font-semibold size-20 rounded-full bg-purple-500">
                 S
               </h1>
@@ -144,7 +144,7 @@ function Review() {
               This place is very amazing and I love it services
               </p>
             </div>
-            <div className="w-[300px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
+            <div className="w-[300px] lg:w-[500px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
               <h1 className="p-3 place-content-center text-3xl font-semibold size-20 rounded-full bg-red-500">
                 A
               </h1>
@@ -162,7 +162,7 @@ function Review() {
               User interface and services of the rising it solutions is very good
               </p>
             </div>
-            <div className="w-[300px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
+            <div className="w-[300px] lg:w-[500px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
               <h1 className="p-3 place-content-center text-3xl font-semibold size-20 rounded-full bg-yellow-500">
                 U
               </h1>
@@ -180,7 +180,7 @@ function Review() {
               Thankyou Rising it solution you are  giving  me  the best work
               </p>
             </div>
-            <div className="w-[300px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
+            <div className="w-[300px] lg:w-[500px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
               <h1 className="p-3 place-content-center text-3xl font-semibold size-20 rounded-full bg-orange-500">
                 T
               </h1>

@@ -13,7 +13,7 @@ function NavBar() {
     <a className="z-50 lg:right-10 bottom-14 right-8  fixed  text-white" href="https://wa.me/919818691322"><Icon className="lg:size-[65px] size-[40px]" icon="logos:whatsapp-icon"/></a>
     </div>
     <nav className="w-full  flex-wrap lg:absolute  fixed z-50 flex gap-8 bg-[#0a0a0a] lg:bg-transparent content-start justify-between  p-4  left-0">
-      <img src={Logo} className="max-w-[100px] lg:w-[100px] lg:h-[50px]" alt="" />
+      <img src={Logo} className="max-w-[100px]" alt="" />
       <div className={`flex max-md:absolute h-[calc(100dvh-61px)] bg-inherit lg:bg-transparent   top-[61px] md:h-auto md:flex-row   p-5 max-md:w-full left-0   flex-col order-2 max-md:basis-80   items-start gap-5 sm:gap-8 ${!isOpen && 'hidden md:flex'}`}>
         <Link to="/" className="hover:text-blue-500">Home</Link>
         <section className="relative group">
@@ -36,7 +36,7 @@ function NavBar() {
               <Link className="hover:text-blue-500" to="/Services/websitedevelopment">Website Development</Link>
               <Link className="hover:text-blue-500" to="/Services/contentmanegmentsytem">Content Management Systems</Link>
               <Link className="hover:text-blue-500" to="/Services/softwaredevelopment">Software Development</Link>
-              <Link className="hover:text-blue-500" to="/Services/sytemintegration">System Integration</Link>
+              <Link className="hover:text-blue-500" to="/Services/systemintegration">System Integration</Link>
             </div>
             <div className="grid gap-1 content-start">
               <span className="font-extrabold text-1xl">

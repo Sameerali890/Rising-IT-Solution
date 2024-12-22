@@ -35,7 +35,7 @@ function Services() {
   const data = services.find((s) => s.title == service);
   return (
     <div>
-      <div className="lg:flex  flex flex-col-reverse justify-center items-center">
+      <div className="lg:flex  flex flex-col-reverse lg:flex-row justify-center items-center">
         <div className="left w-[50%] grid place-content-center p-8 place-items-center h-full">
           <h2 className="lg:text-5xl text-3xl font-bold uppercase">{data.title}</h2>
           <p className="lg:text-2xl mt-[2%] text-center">{data.description}</p>
