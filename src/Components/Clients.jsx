@@ -17,16 +17,16 @@ const Clients = () => {
             direction="left"
             className="mt-12 mb-20"
           >
-            <div className="w-[500px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
+            <div className="lg:w-[500px] w-[300px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
               <img className="size-52" src={Beverages} alt="" />
             </div>
-            <div className="w-[500px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
+            <div className="lg:w-[500px] w-[300px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
               <img className="size-52" src={Win} alt="" />
             </div>
-            <div className="w-[500px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
+            <div className="lg:w-[500px] w-[300px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
             <img className="w-[400px]" src={Cocacola} alt="" />
             </div>
-            <div className="w-[500px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
+            <div className="lg:w-[500px] w-[300px] hover:border-white text-center grid  place-items-center rounded-md p-5 h-[322px] border mx-5">
             <img className="size-52" src={Win} alt="" />
             </div>
           </Marquee>

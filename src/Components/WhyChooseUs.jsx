@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
           <img src={Whychooseus} className="max-w-[500px] w-[100%] lg:w-[100%] lg:p-0 p-3" alt="" />
         </div>
         <div className="right">
-<div className="cards">
+<div className="cards p-5">
     <div className="card red ">
         <p className="tip">Quality Services</p>
         <p className="second-text">Empowering your business with seamless IT support.
