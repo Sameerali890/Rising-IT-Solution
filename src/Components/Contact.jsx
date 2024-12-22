@@ -134,7 +134,7 @@ function Contact() {
                     />
                     <div className=" rounded-md flex items-center justify-center bg-white w-[100px] h-[50px]  p-5 text-gray-600 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2">
                       <div className="">
-                        <p className="text-[8px] text-center font-bold uppercase text-gray-500">
+                        <p className="text-[8px] text-center font-bold uppercase text-gray-700">
                           Web Development
                         </p>
                       </div>
@@ -148,7 +148,7 @@ function Contact() {
                     />
                     <div className=" rounded-md flex items-center justify-center bg-white w-[100px] h-[50px] p-5 text-gray-600 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2">
                       <div className="">
-                        <p className="text-[8px] text-center font-bold uppercase text-gray-500">
+                        <p className="text-[8px] text-center font-bold  uppercase text-gray-700">
                           App Development
                         </p>
                       </div>
@@ -162,7 +162,7 @@ function Contact() {
                     />
                     <div className=" rounded-md flex items-center justify-center bg-white w-[100px] h-[50px] p-5 text-gray-600 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2">
                       <div className="">
-                        <p className="text-[8px] text-center font-bold uppercase text-gray-500">
+                        <p className="text-[8px] text-center font-bold uppercase text-gray-700">
                           E-commerce
                         </p>
                       </div>
@@ -176,7 +176,7 @@ function Contact() {
                     />
                     <div className=" rounded-md flex items-center justify-center bg-white w-[100px] h-[50px] p-5 text-gray-600 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2">
                       <div className="">
-                        <p className="text-[8px] text-center font-bold uppercase text-gray-500">
+                        <p className="text-[8px] text-center font-bold uppercase text-gray-700">
                           Digital Marketing
                         </p>
                       </div>
@@ -190,7 +190,7 @@ function Contact() {
                     />
                     <div className=" rounded-md flex items-center justify-center bg-white w-[100px] h-[50px] p-5 text-gray-600 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2">
                       <div className="">
-                        <p className="text-[8px] text-center font-bold uppercase text-gray-500">
+                        <p className="text-[8px] text-center font-bold uppercase text-gray-700">
                           Cloud Software
                         </p>
                       </div>
@@ -204,7 +204,7 @@ function Contact() {
                     />
                     <div className=" rounded-md flex items-center justify-center bg-white w-[100px] h-[50px] p-5 text-gray-600 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2">
                       <div className="">
-                        <p className="text-[8px] text-center font-bold uppercase text-gray-500">
+                        <p className="text-[8px] text-center font-bold uppercase text-gray-700">
                           Customize Software
                         </p>
                       </div>
@@ -218,7 +218,7 @@ function Contact() {
                     />
                     <div className=" rounded-md flex justify-center items-center  bg-white w-[100px] h-[50px] p-5 text-gray-600 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2">
                       <div className="">
-                        <p className="text-[8px] text-center font-bold uppercase text-gray-500">
+                        <p className="text-[8px] text-center font-bold uppercase text-gray-700">
                           Other Inquiry
                         </p>
                       </div>
@@ -278,7 +278,7 @@ function Contact() {
               </div>
               <button
                 type="submit"
-                className="w-full p-3 hover:border-green-300 text-sm font-bold tracking-wide uppercase rounded border"
+                className="w-full p-3 hover:border-green-300 text-sm font-bold tracking-wide uppercase rounded bo7der"
               >
                 Send Message
               </button>
