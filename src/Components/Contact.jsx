@@ -125,7 +125,7 @@ function Contact() {
               className="space-y-4 p-8 lg:w-[550px]"
             >
               <div className="flex items-center">
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-1">
                   <label className="cursor-pointer">
                     <input
                       type="radio"
@@ -278,7 +278,7 @@ function Contact() {
               </div>
               <button
                 type="submit"
-                className="w-full p-3 hover:border-green-300 text-sm font-bold tracking-wide uppercase rounded bo7der"
+                className="w-full p-3 hover:border-green-300 text-sm font-bold tracking-wide uppercase rounded border"
               >
                 Send Message
               </button>
