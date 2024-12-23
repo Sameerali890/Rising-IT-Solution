@@ -1,5 +1,7 @@
 import Swal from "sweetalert2";
-import Footer from "../Components/Footer"
+import Footer from "../Components/Footer";
+import Countrydata from "../CountryData.json";
+import { useState } from "react";
 function Contact() {
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -28,18 +30,36 @@ function Contact() {
       event.target.reset();
     }
   };
+
+  const [countryid, setCountryid] = useState("");
+  const [state, setState] = useState([]);
+  const [stateid, setStateid] = useState("");
+
+  const handlecounty = (e) => {
+    const getcountryname = e.target.value;
+    const getStatedata = Countrydata.find(
+      (country) => country.country_name === getcountryname
+    ).states;
+    setState(getStatedata);
+    setCountryid(getcountryname);
+    //console.log(getcountryId);
+  };
+
+  const handlestate = (e) => {
+    const statename = e.target.value;
+    //console.log(stateid);
+    setStateid(statename);
+  };
   return (
     <>
-      <div className="space-y-4  mb-10 lg:h-[800px]">
+      <div className="space-y-4  mb-20  lg:h-[100vh]">
         <h1 className="text-center text-5xl mt-6">Let&apos;s Talk</h1>
         <p className="text-center text-1xl">
           Your IT Challenges, Our Expertise—Together, We Build the Future
         </p>
-        <div className="flex justify-evenly lg:justify-evenly border min-w-[100%] lg:w-[100vw] flex-col lg:flex-row  items-center   max-h-[100%]  mx-auto rounded-lg  dark:text-gray-800">
+        <div className="flex justify-evenly  border min-w-[100%] lg:w-[100vw] flex-col lg:flex-row  items-center max-h-[100%] mx-auto rounded-lg  dark:text-gray-800">
           <div className="left p-5 lg:p-0">
-            <div
-              className="section-banner h-[250px] w-[250px] lg:w-[500px] lg:h-[500px] "
-            >
+            <div className="section-banner h-[250px] w-[250px] lg:w-[500px] lg:h-[500px] ">
               <div id="star-1">
                 <div className="curved-corner-star">
                   <div id="curved-corner-bottomright"></div>
@@ -122,10 +142,10 @@ function Contact() {
             <form
               onSubmit={onSubmit}
               noValidate=""
-              className="space-y-4 p-8 lg:w-[550px]"
+              className="space-y-4 p-8  lg:w-[550px]"
             >
               <div className="flex items-center">
-                <div className="flex flex-wrap gap-1">
+                <div className="flex flex-wrap  gap-1">
                   <label className="cursor-pointer">
                     <input
                       type="radio"
@@ -252,6 +272,42 @@ function Contact() {
                   className="w-full p-3 rounded text-black "
                 />
               </div>
+              {/* country code  start*/}
+              <div>
+                <label className="font-semibold text-sm"> Country</label>
+                <div className="text-black">
+                  <select
+                    name="country"
+                    className=" px-2  w-[100%] h-[50px] rounded-md"
+                    onChange={(e) => handlecounty(e)}
+                  >
+                    <option className="" value="">--Select Country--</option>
+                    {Countrydata.map((getcountry, index) => (
+                      <option name="Country"  value={getcountry.country_name} key={index}>
+                        {getcountry.country_name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label className="text-sm font-semibold"> State</label>
+                <div className="text-black">
+                  <select
+                    name="states"
+                    className="px-2 w-[100%] h-[50px] rounded-md"
+                    onChange={(e) => handlestate(e)}
+                  >
+                    <option value="">--Select State--</option>
+                    {state.map((getstate, index) => (
+                      <option name="State" value={getstate.state_name} key={index}>
+                        {getstate.state_name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+              {/* country code end */}
               <div>
                 <label htmlFor="email" className="text-sm font-semibold">
                   Mobile No:
@@ -286,7 +342,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    <Footer />
+      <Footer />
     </>
   );
 }

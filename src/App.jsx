@@ -1,4 +1,4 @@
-import Footer from "../src/Components/Footer"
+import Footer from "../src/Components/Footer";
 import Clients from "./Components/Clients";
 import NavBar from "./Components/NavBar";
 import NewTools from "./Components/NewTools";
@@ -16,8 +16,7 @@ function App() {
       <Clients />
       <WhyChooseUs />
       <Footer />
-      
-  </>
+    </>
   );
 }
 
