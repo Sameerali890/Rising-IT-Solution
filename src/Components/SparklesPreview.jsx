@@ -68,21 +68,21 @@ function SparklesPreview() {
                 currentTab == index ? "flex" : "hidden"
               }`}
             >
-              <div className="w-[500px] lg:w-[600px]   text-center lg:text-left ">
-                <p className="mb-5 text-[25px] lg:text-[45px] font-bold">{kuch.heading}</p>
-                <h1 className="max-sm:line-clamp-4">{kuch.description}</h1>
-                <div className="flex items-center justify-center  mt-[5%]">
-                  <div className="relative  lg:right-52 group">
+              <div className="w-[500px] lg:w-[600px]  space-y-3  lg:space-y-8 text-center lg:text-left ">
+                <p className="mb-5 text-[20px] lg:text-[45px] font-bold">{kuch.heading}</p>
+                <h1 className="max-sm:line-clamp-4 text-[15px] lg:text-[18px]">{kuch.description}</h1>
+                <div className="flex items-center justify-center   mt-[5%]">
+                  <div className="relative  lg:right-48 group">
                     <button className="relative inline-block   p-px  font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95">
                       <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
 
-                      <span className="relative z-10 block px-6 py-3 rounded-xl bg-gray-950">
-                        <div className="relative z-10 flex items-center space-x-2">
+                      <span className="relative z-10 block px-6 py-3 rounded-xl  bg-gray-950">
+                        <div className="relative z-10 flex text-[12px] lg:text-[18px] items-center space-x-2">
                           <Link
                             to="/contact"
                             className="transition-all duration-500 group-hover:translate-x-1"
                           >
-                            Let's get started
+                            Let's get started 
                           </Link>
                           <svg
                             className="w-6 h-6 transition-transform duration-500 group-hover:translate-x-1"
@@ -105,7 +105,7 @@ function SparklesPreview() {
                 </div>
               </div>
               <img
-                className="size-[250px] lg:size-[550px] -mt-[25%] lg:mt-0 aspect-square rounded-lg"
+                className="size-[200px] lg:size-[550px] -mt-[25%] lg:mt-0 aspect-square rounded-lg"
                 src={kuch.img}
                 alt=""
               />
@@ -113,8 +113,7 @@ function SparklesPreview() {
           );
         })}
       </div>
-      <div className="flex justify-center">
-        <div className="md:absolute lg:flex  grid grid-cols-3  justify-self-center place-items-center lg:justify-center lg:gap-8 gap-3  lg:bottom-4 bottom-5 absolute w-[80%] ">
+        <div className="md:absolute lg:flex  grid grid-cols-3  justify-self-center place-items-center lg:justify-center lg:gap-8 gap-3 p-5  lg:bottom-4 bottom-1 absolute w-[100%] ">
           {array.map((kuch, index) => {
             return (
               <button onClick={() => setCurrentTab(index)} key={index} className="items-center   lg:py-4 lg:px-3 border p-1 text-[10px] lg:text-[20px] w-[100px] lg:w-fit h-[60px] lg:h-full  rounded-lg font-bold  text-black bg-white hover:bg-slate-600">
@@ -123,7 +122,6 @@ function SparklesPreview() {
             );
           })}
         </div>
-      </div>
     </div>
   );
 }
