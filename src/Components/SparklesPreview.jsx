@@ -105,7 +105,7 @@ function SparklesPreview() {
                 </div>
               </div>
               <img
-                className="size-[250px] lg:size-[550px] mb-[5%]  aspect-square rounded-lg"
+                className="size-[250px] lg:size-[550px] -mt-[25%] lg:mt-0 aspect-square rounded-lg"
                 src={kuch.img}
                 alt=""
               />
@@ -113,14 +113,16 @@ function SparklesPreview() {
           );
         })}
       </div>
-      <div className="md:absolute invisible lg:visible flex flex-wrap justify-evenly lg:justify-center lg:gap-8 w-full bottom-4 ">
-        {array.map((kuch, index) => {
-          return (
-            <button onClick={() => setCurrentTab(index)} key={index} className="items-center   py-4 px-3   rounded-lg font-bold  text-black bg-white hover:bg-slate-600">
-              {kuch}
-            </button>
-          );
-        })}
+      <div className="flex justify-center">
+        <div className="md:absolute lg:flex  grid grid-cols-3  justify-self-center place-items-center lg:justify-center lg:gap-8 gap-3  lg:bottom-4 bottom-5 absolute w-[80%] ">
+          {array.map((kuch, index) => {
+            return (
+              <button onClick={() => setCurrentTab(index)} key={index} className="items-center   lg:py-4 lg:px-3 border p-1 text-[10px] lg:text-[20px] w-[100px] lg:w-fit h-[60px] lg:h-full  rounded-lg font-bold  text-black bg-white hover:bg-slate-600">
+                {kuch}
+              </button>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
